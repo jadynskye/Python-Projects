@@ -1,5 +1,22 @@
 """
-prompt:
+
+This project was my first time working with classes, inheritance, and abstract methods in Python.
+I designed a small object-oriented system for a fictional "Cozy Cafe" where customers can place
+orders for different beverages like coffee, tea, and matcha.
+
+Each beverage is a subclass of an abstract base class called `beverage`, which defines a common
+structure and interface. This helped me learn how child classes inherit attributes and methods
+from a parent class while also allowing them to override specific behaviors (like `get_description()`).
+
+I also created a customer system with two types of customers: regular and loyalty members.
+Both inherit from the abstract `customer` class, but loyalty customers receive a discount when
+their total cost is calculated. This part of the project helped me understand polymorphism and 
+how different objects can implement the same method in their own unique ways.
+
+Through this project, I got more comfortable with concepts like object composition (customers having a list
+of beverage orders), and how to organize real-world scenarios using classes in Python.
+
+prompt I used:
 
 In the Cozy Cafe, the menu features various types of beverages: coffee, tea, and matcha. Each
 beverage is customized by its name, size, and price. The cafe serves a diverse clientele (regular
