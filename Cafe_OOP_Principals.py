@@ -117,6 +117,7 @@ reg_customer.print_receipt()
 
 #for spacing
 print()
+print("-" * 30)
 print()
 
 loyal_customer.add_order(beverage2)
