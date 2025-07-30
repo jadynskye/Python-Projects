@@ -1,0 +1,111 @@
+# Calculator program
+# By : Jadyn Reid
+# This program is a basic calculator that uses functions and a dictionary to perform math operations.
+# It lets the user choose between addition, subtraction, multiplication, and division.
+# Each operation is written as its own function and stored in a dictionary using the operator symbol as the key.
+# The program keeps asking the user if they want to continue using the result or start over with a new number.
+
+# Addition funcion 
+
+def addition(num1, num2):
+    """ 
+    This funciton is to take the two
+    users inputs, add them, and return 
+    the output
+    """
+    output = num1 + num2
+    return f"\n{num1} + {num2} = {output}"
+
+
+# Subtraction funcion 
+
+def subtraction(num1, num2):
+    """ 
+    This funciton is to take the two
+    users inputs, subtract them, and return 
+    the output
+    """
+    output = num1 - num2 
+    return f"\n{num1} - {num2} = {output}"
+
+
+# Multiplication function 
+
+def multiplication(num1, num2):
+    """ 
+    This funciton is to take the two
+    users inputs, multiply them, and return 
+    the output
+    """
+    output = num1 * num2 
+    return f"\n{num1} * {num2} = {output}"
+
+# Division function 
+
+def division(num1, num2):
+    """ 
+    This funciton is to take the two
+    users inputs, divides them, and return 
+    the output
+    """
+    output = num1 / num2 
+    return f"\n{num1} / {num2} = {output}"
+
+
+# Python dictionary to add all functions with corresponding operation
+operation_dict = {
+    "+": addition,
+    "-": subtraction,
+    "*": multiplication,
+    "/": division
+}
+
+
+# Trying different way, working with dictionaries 
+
+def main():
+        
+    finished = False
+
+    num1 = int(input("What's the first number? "))
+
+    while finished != True:
+
+        print("\nOperation Options:")
+        print("-"* 20)
+        print("+")
+        print("-")
+        print("*")
+        print("/\n") 
+
+        chosen_operation = input("Now choose an operation: ")
+
+        num2 = int(input("What is the second number? "))
+
+        # For each operation (key) in the dictionary 
+        for key in operation_dict:
+            # If the chosen operation matches the key, run the matching function
+            if chosen_operation == key:
+                # In the dictionary, witht the chosen key, take the inputs and run the funct.
+                full_result = operation_dict[chosen_operation](num1,num2)
+                # Print result 
+                print(full_result)
+                # Knowing the num will always be in the last space, get that num
+                # & assign it as the new num1
+                num1 = full_result.split()[-1]
+                num1 = int(num1) 
+
+        print()
+
+        continue_with_number = input("Would you like to continue with this number or start again? Reply y or n ").lower()
+
+        if continue_with_number == "y":
+            pass
+        else:
+            finished = True
+            break
+
+# Calling main function 
+main()
+
+        
