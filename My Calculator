@@ -63,7 +63,7 @@ operation_dict = {
 
 # Trying different way, working with dictionaries 
 
-def main():
+def calculator():
         
     finished = False
 
@@ -106,6 +106,6 @@ def main():
             break
 
 # Calling main function 
-main()
+calculator()
 
         
