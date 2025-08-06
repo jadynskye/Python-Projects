@@ -2,12 +2,13 @@
 Jadyn Reid  
 Date: August 6, 2025  
 
-Description: This project is a simple text-based Blackjack game where you play against the dealer.  
-It deals two cards to both players, checks for Blackjack, handles Aces (11 or 1), and  
-lets the user choose to hit or pass. The dealer draws until they reach at least 17.  
-The program calculates scores, compares them, and announces the winner. This was a pretty hard 
-game to complete, I had to draw out a flow chart to be able to gather how I was going to build it.
-Overall, it was very fun to complete and I'm glad I didnt give up.
+Description: This project is a simple text-based Blackjack game made using Python, where you play against the dealer.  
+It deals two cards to both players, checks for Blackjack, handles Aces (11 or 1), and lets the user choose to hit or pass.  
+The dealer draws until they reach at least 17. The program calculates scores, compares them, and announces the winner.  
+To build it, I used functions, lists, conditionals, loops, user input, and the random module to simulate drawing cards.  
+This game was honestly pretty hard to finish — I even had to sketch out a flowchart to figure out the logic. But overall,  
+it was fun to make, and I’m proud I didn’t give up.
+
 '''
 
 import random 
